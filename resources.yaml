@@ -1,0 +1,17 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: resourceswalla
+spec:
+ containers:
+ - name: containerwalla
+   image: nginx
+   resources:
+      requests:
+      # soft limits 
+        memory: "64Mi"
+        cpu: "250m"
+      limits:
+      # hard limits
+        memory: "128Mi"
+        cpu: "250m"
