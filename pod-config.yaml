@@ -1,0 +1,21 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: configpodra
+spec:
+  containers:
+  - name: sudheer
+    image: nginx
+    env:
+    - name: course
+      valueFrom:
+        configMapKeyRef:
+          name: configra
+          key: course
+    - name: trainer
+      valueFrom:
+        configMapKeyRef:
+          name: configra
+          key: trainer
+
+
