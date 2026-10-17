@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: configra
+data:
+  course: "joindevops"
+  instructor: "sudheer"
+  path: "waste"
