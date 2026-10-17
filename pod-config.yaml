@@ -12,7 +12,7 @@ spec:
         configMapKeyRef:
           name: configra
           key: course
-    - name: trainer
+    - name: instructor
       valueFrom:
         configMapKeyRef:
           name: configra
