@@ -6,16 +6,20 @@ spec:
   containers:
   - name: sudheer
     image: nginx
-    env:
-    - name: course
-      valueFrom:
-        configMapKeyRef:
-          name: configra
-          key: course
-    - name: instructor
-      valueFrom:
-        configMapKeyRef:
-          name: configra
-          key: instructor
+    envFrom:
+        - configMapRef:
+            name: configra
+    # env: # Illa name isthu vellithey manaki code anedhi pedhadhi ayipothundhi so direct we 
+    # refer the config map
+    # - name: course
+    #   valueFrom:
+    #     configMapKeyRef:
+    #       name: configra
+    #       key: course
+    # - name: instructor
+    #   valueFrom:
+    #     configMapKeyRef:
+    #       name: configra
+    #       key: instructor
 
 
