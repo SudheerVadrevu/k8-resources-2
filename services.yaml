@@ -1,0 +1,17 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: servicera
+spec:
+  selector:
+    sudheer: jollyboy
+    pranavi: crygirl
+    jane: shortgirl
+    sreeja: wasteperson
+  ports:
+    - protocol: TCP
+      port: 80 # service_port
+      targetPort: 80 # target port
+
+      # Ikkada type emi ivakapothey adhe cluster IP ane ardham
+      # service port different vundachu and pod port different vundachu.

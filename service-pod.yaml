@@ -1,0 +1,14 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: servicelopod
+  labels:
+    sudheer: jollyboy
+    pranavi: crygirl
+    jane: shortgirl
+    sreeja: wasteperson
+spec:
+  containers:
+  - name: podforservice
+    image: nginx
+
