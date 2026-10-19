@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: labelsu
+  labels:
+    name: sudheer
+    course: joindevops
+    instructor: sivakumar
+spec:
+  containers:
+  - name: newcontainer
+    image: nginx
