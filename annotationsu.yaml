@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: anoo
+  annotations:
+    githuburl: 'https://github.com/SudheerVadrevu/k8-resources-2.git'
+spec:
+  containers:
+  - name: annocontainer
+    image: nginx
