@@ -1,0 +1,19 @@
+kind: Pod
+apiVersion: v1
+metadata:
+ name: resourceskira
+spec:
+  containers:
+  - name: resou
+    image: nginx
+    resources:
+      requests:
+        # soft limits
+        memory: "64Mi"
+        cpu: "250m"
+      limits: # hard limits
+        memory: "128Mi"
+        cpu: "500m"
+      
+      # soft limits yeppudu kooda hard limits ki equal or above vunadali
+      # otherwise container anedhi work avadhu
