@@ -1,0 +1,17 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: loadbalancerkiportra
+spec:
+  type: LoadBalancer
+  selector: 
+    sudheer: joyfull
+    vineela: wastegirl
+    pranavi: worstgirl
+    sreeja: toowastegirl
+  ports:
+    - protocol: TCP
+      port: 80  # idhi mana service port 
+      targetPort: 80 # idhi mana target port means mana pod lo vunna container port
+      nodePort: 30007
+  
