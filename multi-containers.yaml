@@ -7,5 +7,5 @@ spec:
   - name: newnginx
     image: nginx
   - name: almara
-    image: almalinux:9
+    image: "almalinux:9"
     command: ["sh", "2000"]
