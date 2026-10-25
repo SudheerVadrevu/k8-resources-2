@@ -1,14 +1,17 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: configkipodra
+  name: fullconfigkipodra
 spec:
   containers:
   - name: configkipod
     image: nginx
-    env:
-      - name: sulakaya
-        valueFrom:
-          configMapKeyRef:
-            name: configra           # The ConfigMap this value comes from.
-            key: password
+    envFrom:
+      - configMapRef:
+          name: configra
+    # env:
+    #   - name: sulakaya
+    #     valueFrom:
+    #       configMapKeyRef:
+    #         name: configra           # The ConfigMap this value comes from.
+    #         key: password
