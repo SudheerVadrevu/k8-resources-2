@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: multira
+spec:
+  containers:
+  - name: newnginx
+    image: nginx
+  - name: almara
+    image: almalinux:9
+    command: ["sh", "2000"]
