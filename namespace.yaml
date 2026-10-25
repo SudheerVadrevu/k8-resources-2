@@ -2,7 +2,7 @@ kind: Namespace
 apiVersion: v1
 metadata:
   name: namespacera # idhe name manam ichedhi name space ki. extra info ivadaniki metadata ni use chestham
-  label:
+  labels:
     name: spacera
 
 
