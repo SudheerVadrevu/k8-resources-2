@@ -1,0 +1,11 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: namespacera # idhe name manam ichedhi name space ki. extra info ivadaniki metadata ni use chestham
+  label:
+    name: spacera
+
+
+# manaki 3 nodes vunnayi oka node lo manaki amazon project, roboshop project, expense project illa
+# manaki projects run avuthunte oka project lo use chese resources ni vere project lo access cheyakunda
+# aaa isolation isthundhi name space anedi
