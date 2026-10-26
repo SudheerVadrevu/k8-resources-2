@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: servicekipodra
+  labels:
+    sudheer: sogoodboy
+    pranavi: workwoman
+    sreeja: wastewoman
+spec:
+  containers:
+  - name: servicepod 
+    image: nginx
