@@ -1,0 +1,7 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: sudheer # ikkada namespace iche name ikkada istham and ikkada extra information ivachu
+
+# manam oke node lo multiple projects ni run chestham oka project use chesina resources ni vere
+# project lo use cheyakunda or mix avakunda name space anedhi use chestham
