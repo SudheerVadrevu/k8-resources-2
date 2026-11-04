@@ -7,4 +7,5 @@ spec:
   - name: bachi
     image: nginx
   - name: pranavi
-    image: almalinux:9
+    image: "almalinux:9"
+    command: "sleep 2000"
