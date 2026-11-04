@@ -6,3 +6,8 @@ spec:
   containers:
   - name: podra
     image: nginx
+
+# Pod means container there are multiple containers running inside pod
+# containers shares same network and storage
+# what is the smallest runnable (deployable) unit in docker? It is container
+# In Kubernetes, the smallest runnable (deployable) unit is pod

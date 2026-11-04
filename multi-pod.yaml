@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: multipodra
+spec:
+  containers:
+  - name: bachi
+    image: nginx
+  - name: pranavi
+    image: almalinux:9
