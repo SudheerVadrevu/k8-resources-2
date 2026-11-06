@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: labelskipodra
+  labels:
+    sudheer: goodboy
+    pranavi: wastegirl
+spec:
+  containers:
+  - name: wastepod
+    image: nginx
