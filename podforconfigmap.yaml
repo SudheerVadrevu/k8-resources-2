@@ -1,0 +1,19 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: configmapra
+spec:
+  containers:
+  - name: configkipod
+    image: nginx
+    env:
+      - name: pranavi
+        valueFrom:
+          configMapKeyRef:
+            name: mapra
+            key: pranavi
+      - name: sreeja
+        valueFrom:
+          configMapKeyRef:
+            name: mapra
+            key: sreeja
