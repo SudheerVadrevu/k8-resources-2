@@ -1,0 +1,21 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: resourcesra
+spec:
+  containers:
+  - name: sudhe 
+    image: nginx
+    resources:
+      requests: # ivi soft requests 
+        memory: "64Mi"
+        cpu: "250m"
+      limits: # ivi hard requests
+        memory: "128Mi"
+        cpu: "500m"
+
+
+# docker best practice lo chusam resource limitations anedhi vundali
+# 1 cpu = ? milli cores. 1 cpu = 1024 milli cores = 1 core and illativi 3 or 4 vuntayi mana laptop lo. Here
+# memory means RAM . Manam ikkada 250 ante mana laptop tho compare chesthe(.25)
+# manaki yeppudu kuda cpu or RAM size hard limits lo ichina value ki equal or above vundali softlimits lo. if you give high value in soft limit then contianer will not work.
