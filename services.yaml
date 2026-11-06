@@ -1,0 +1,20 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: servicera
+spec:
+  selector:   # Ikkada selectors is nothing but labels. Ee labels tho vunna pod ni map chesthadhi
+    sudheer: sweetyboy
+    pranavi: worstgirl
+  ports:
+    - protocol: TCP
+      port: 80  #  serviceport                80(host_port):80(container_port)
+      targetPort: 80 # targetport
+
+
+# containers are ephemeral (temporary). same Pods are ephemeral. By using Service we can run the pod
+# Ikkada Platform kabati multiple hosts vuntayi. Mana Pod ye host lo run avuthondho cheplem.
+# Labels are important here. Oka service communicates with pod through labels. ee service exact ye
+# pod tho communicate avali ante through labels.
+# Ikkada manam type emi ivakapothe adhe ClusterIP
+# Service Port different vundachu and target port different vundachu.
