@@ -6,14 +6,18 @@ spec:
   containers:
   - name: configkipod
     image: nginx
-    env:
-      - name: pranavi
-        valueFrom:
-          configMapKeyRef:
+    # env:
+    #   - name: pranavi
+    #     valueFrom:
+    #       configMapKeyRef:
+    #         name: mapra
+    #         key: pranavi
+    #   - name: sreeja
+    #     valueFrom:
+    #       configMapKeyRef:
+    #         name: mapra
+    #         key: sreeja
+    # illa yenni ani istham. so direct ga manam configmap ni ikkada petteyavachu.
+    envFrom:
+        - configMapRef:
             name: mapra
-            key: pranavi
-      - name: sreeja
-        valueFrom:
-          configMapKeyRef:
-            name: mapra
-            key: sreeja
