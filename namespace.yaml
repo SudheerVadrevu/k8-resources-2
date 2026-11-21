@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: firstnamespacera
   labels:
-   sudheer: Not that one bro
+   sudheer: Not_that_one_bro
