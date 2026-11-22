@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: multiplepod
+spec:
+  containers:
+  - name: wasteimage
+    image: nginx
+  - name: superimage
+    image: almalinux:9
+    command: ["sleep", "200"]
