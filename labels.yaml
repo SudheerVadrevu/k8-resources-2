@@ -2,6 +2,10 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: labelskipodra
+  labels:
+    sudheer: sudheerisagoodboy
+    vineela: vineelaisabadgirl
+    pranavi: pranaviisnotgoodgirl
 spec:
   containers:
   - name: labelskipodra
