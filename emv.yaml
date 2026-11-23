@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: envkipod
+spec:
+  containers:
+  - name: envpod 
+    image: nginx
+    env:
+    - name: Sudheer
+      value: "na peru surya"
+    - name: vineela
+      value: "na peru vineela"
