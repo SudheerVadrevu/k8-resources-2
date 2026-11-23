@@ -1,0 +1,8 @@
+apiVersion: v1
+Kind: Pod
+metadata:
+  name: labelskipodra
+spec:
+  containers:
+  - name: labelskipodra
+    image: nginx
