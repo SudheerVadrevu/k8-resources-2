@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotationskipodra
+  annotations:
+    githuburl: "https://github.com/SudheerVadrevu/k8-resources-2.git"
+spec:
+  containers:
+  - name: annotationskipod
+    image: nginx
